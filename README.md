@@ -1,14 +1,14 @@
-# compress-infos
+# compress-infos
 
 Get informations about a compressed file or buffer.
 
-## Usage
+## Usage
 
 ```javascript
 const compressInfos = require('compress-infos');
 
 const fileType = compressInfos.getCompressionType('path/to/file.gz');
-const fileSize = compressInfos?getUncompressedSize('path/to/file.gz');
+const fileSize = compressInfos.getUncompressedSize('path/to/file.gz');
 
 const buffer = fs.readFileSync('path/to/file.gz');
 const bufferType = compressInfos.getCompressionType(buffer);
@@ -24,8 +24,8 @@ As indicated in the [GZIP file format specification version 4.3](https://tools.i
 
 > ISIZE (Input SIZE) :
 >
-> ​	This contains the size of the original (uncompressed) input
-> ​	data modulo 2^32.
+> 	This contains the size of the original (uncompressed) input
+> 	data modulo 2^32.
 
 So, if the input buffer or input file is a gzipped file containing datas for a more than 4GB uncompressed file, the size returned by this module will be wrong.
 
