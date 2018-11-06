@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint-config-airbnb-base/legacy"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "vars-on-top": 0,
+    "dot-notation": 0,
+    "guard-for-in": 0,
+    "func-names": 0,
+    "one-var": 0,
+    "no-bitwise": ["error", { "allow": ["<<"] }],
+    "no-underscore-dangle": 0,
+    "handle-callback-err": [2, "^(err|error)$" ],
+    "camelcase": [2, {"properties": "always"}],
+    "indent": [2, 2, {"VariableDeclarator": 2}],
+    "comma-dangle": [2, "always-multiline"],
+    "no-use-before-define": [2, "nofunc"],
+    "no-mixed-requires": [1, {"grouping": true}],
+    "id-length": [2, {"min": 2, "exceptions": ["i", "_"]}],
+    "max-len": [2, {"code": 120}],
+    "operator-linebreak": [1, "before"]
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "parser": "babel-eslint"
+}
