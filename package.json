@@ -8,11 +8,10 @@
   },
   "author": "Fasterize",
   "license": "MIT",
-  "dependencies": {
-    "eslint": "^5.8.0",
-    "eslint-config-airbnb-base": "^13.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "babel-eslint": "^10.0.1"
   }
 }
