@@ -4,7 +4,8 @@
   "description": "Get informations about compressed file or buffer",
   "main": "index.js",
   "scripts": {
-    "test": "node tests/test.js"
+    "test": "node tests/test.js",
+    "lint": "npx eslint index.js"
   },
   "author": "Fasterize",
   "license": "MIT",
